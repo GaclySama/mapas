@@ -2,14 +2,12 @@ import axios from 'axios';
 
 
 const searchApi = axios.create({
-  baseURL: 'https://nominatim.openstreetmap.org',
+  baseURL: 'https://api.maptiler.com/geocoding',
   params: {
-    format: 'json',
+    types: 'place',
+    autocomplete: 'false',
+    fuzzyMatch: 'true',
     limit: 5,
-    countryCodes: 'sv',
-    addressdetails: 1,
-    namedetails: 1,
-    polygon_geojson: 1,
   }
 });
 
