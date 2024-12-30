@@ -15,7 +15,6 @@ export const SearchBar = () => {
     debounceRef.current = setTimeout(() => {
       // TODO
       searchPlacesByTerm( event.target.value );
-      console.log('debounced value: ', event.target.value );
     }, 500);
   }
 

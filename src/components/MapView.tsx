@@ -18,7 +18,7 @@ export const MapView = () => {
         container: mapDiv.current!, // container id
         style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=fGVeXadGDA8EWesOVAmx', // style URL
         center: userLocation, // starting position [lng, lat]
-        zoom: 6 // starting zoom
+        zoom: 14 // starting zoom
       });
 
       setMap( map );
